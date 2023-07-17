@@ -1,0 +1,21 @@
+.error-img{
+    animation: zoom-in .3s ease-in-out;
+    margin-bottom: 1rem;
+}
+
+.error-text{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+@keyframes zoom-in {
+    0%{
+        scale: 0;
+    }
+    70%{
+        scale: 140%;
+    }
+    100%{
+        scale: 100%;
+    }
+}

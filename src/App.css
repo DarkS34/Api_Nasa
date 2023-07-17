@@ -1,0 +1,47 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.25rem 0;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#date-label{
+  font-size: 1.25rem;
+  margin-bottom: .5rem;
+}
+
+#date{
+  background-color: transparent;
+  border: 1px solid gray;
+  padding: .5rem;
+  border-radius: 5px;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 1440px){
+  #root{
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  #date-label{
+    font-size: max(2.4vw,12px);
+  }
+  
+  #date{
+    border: 1px solid gray;
+    padding: .5rem;
+    border-radius: 5px;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: max(3vw,14px);
+  }
+}
